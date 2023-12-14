@@ -104,7 +104,7 @@ body {
     background: var(--F4F4F4, #F4F4F4);
     width: 100%;
     padding: 20px;
-
+    color: var(--2D2D2D, #2D2D2D);
     background-image: url("/images/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 95% 50%;

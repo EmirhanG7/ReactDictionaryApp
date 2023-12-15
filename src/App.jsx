@@ -7,9 +7,14 @@ export default function App() {
 
   const [searchWord, setSearchWord] = useState("keyboard")
   const [fetchWord, setFetchWord] = useState()
+  const [fontType, setFontType] = useState("Inter")
 
   console.log(searchWord)
   console.log(fetchWord)
+
+
+
+  
 
 
 
@@ -37,9 +42,9 @@ export default function App() {
   return (
     <>
       <div className="container">
-        <Header />
+        <Header fontType={fontType} setFontType={setFontType} />
         <Dictionary searchWord={searchWord} fetchWord={fetchWord} setSearchWord={setSearchWord} />
-        <Noun fetchWord={fetchWord} />
+        <Noun setSearchWord={setSearchWord} fetchWord={fetchWord} />
       </div>
     </>
   )

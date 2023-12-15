@@ -5,6 +5,7 @@ export default function Noun({ fetchWord, setSearchWord }) {
     console.log(fetchWord)
     return (
         <>
+        
             {
                 fetchWord && 
                 <>
@@ -57,6 +58,7 @@ export default function Noun({ fetchWord, setSearchWord }) {
                     </div>
                 </>
             }
+
         </>
     )
 }

@@ -9,16 +9,6 @@ export default function App() {
   const [fetchWord, setFetchWord] = useState()
   const [fontType, setFontType] = useState("Inter")
 
-  console.log(searchWord)
-  console.log(fetchWord)
-
-
-
-  
-
-
-
-
 
   useEffect(() => {
 
@@ -33,11 +23,6 @@ export default function App() {
 
 
   }, [searchWord])
-
-
-
-
-
 
   return (
     <>

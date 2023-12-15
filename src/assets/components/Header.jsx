@@ -4,12 +4,11 @@ export default function Header({ fontType, setFontType}) {
 
     function handleFont() {
         document.body.style.fontFamily = fontType;
-      }
+    }
     
-    
-      useEffect(() =>  {
-        handleFont()
-      }, [fontType])
+    useEffect(() =>  {
+    handleFont()
+    }, [fontType])
 
 
     return (

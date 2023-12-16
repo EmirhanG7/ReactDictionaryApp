@@ -127,9 +127,7 @@ body {
 }
 
 .searchWords {
-  display: flex;
   margin: 45px auto 0 auto;
-  justify-content: space-between;
 
   & .words {
     display: flex;
@@ -152,6 +150,14 @@ body {
     font-weight: 400;
     line-height: normal;
   }
+}
+
+
+.phonetics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
 }
 
 .noun {

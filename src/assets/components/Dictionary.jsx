@@ -37,12 +37,28 @@ export default function Dictionary({searchWord, setSearchWord, fetchWord }) {
                         fetchWord &&
                         <>
                             <h1>{fetchWord.word}</h1>
-                            <p>{fetchWord.phonetic}</p>
+                            {
+                                fetchWord.phonetics.map((x, index) => {
+                                    return (
+                                        <div key={index} className="phonetics">
+
+                                            {x.audio &&
+                                                <>
+                                                    <p>{x.text}</p>
+                                                    <img onClick={() => {
+                                                        const audio = new Audio(x.audio)
+                                                        audio.play()
+                                                    }} src="/images/play-icon.svg" alt="Play Icon" />
+
+                                                </>
+                                            }
+                                        </div>
+                                    )
+                                
+                                })
+                            }
                         </>
                     }
-                </div>
-                <div className="playPronounce">
-                    <a href="#"><img src="/images/play-icon.svg" alt="Play Icon" /></a>
                 </div>
             </div>
         </>

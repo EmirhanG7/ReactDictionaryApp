@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Dictionary({searchWord, setSearchWord, fetchWord }) {
+export default function Dictionary({ setSearchWord, fetchWord }) {
 
     const [error, setError] = useState(false)
 
@@ -13,7 +13,6 @@ export default function Dictionary({searchWord, setSearchWord, fetchWord }) {
         setSearchWord(e.target.searchInput.value)
         setError(false)
     }
-
 
 
 
@@ -41,7 +40,6 @@ export default function Dictionary({searchWord, setSearchWord, fetchWord }) {
                                 fetchWord.phonetics.map((x, index) => {
                                     return (
                                         <div key={index} className="phonetics">
-
                                             {x.audio &&
                                                 <>
                                                     <p>{x.text}</p>

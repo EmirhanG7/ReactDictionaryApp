@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default function Noun({ fetchWord, setSearchWord }) {
+export default function Noun({ fetchWord, setSearchWord,  }) {
 
-    console.log(fetchWord)
+    
+
     return (
         <>
         
